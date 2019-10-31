@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  rel="stylesheet " href="normalize.css">
+    <style type="text/css">
+        header, footer{
+            text-align: center;
+            background: green;
+            padding: 50px;
+        }
+        main{
+        }
+        aside{
+            width: 20%;
+            box-sizing: border-box; /* bao goom padding*/
+            background: orange;
+            padding: 30px;
+            min-height: 400px;
+            float: left;
+        }
+        .main-content{
+            box-sizing: border-box;
+            background: #333333;
+            padding: 50px;
+            min-height: 400px;
+            float: right;
+            width: 80%;
+        }
+        main{
+            overflow: auto;
+        }
+
+        @media screen and (max-width: 680px) {
+
+            /*css áp dụng cho màn hình nhỏ hơn 680px*/
+            aside{
+                width: 100%;
+                float: none;
+            }
+            .main-content{
+                width: 100%;
+                float: none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>header</h1>
+</header>
+
+<main>
+    <section class="main-content">
+        <h1> nội dung chinh cua trang wweb</h1>
+    </section>
+    <aside>
+        <h1>sidebar</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a> </li>
+                <li><a href="#">Giới thiệu</a> </li>
+                <li><a href="#">Sản phẩm</a> </li>
+                <li><a href="#">Liên hệ</a> </li>
+            </ul>
+        </nav>
+    </aside>
+
+</main>
+<footer>
+    <h1>footer</h1>
+</footer>
+</body>
+</html>

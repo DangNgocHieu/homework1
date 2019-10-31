@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*==Style cơ bản cho website==*/
+body {
+    font-family: sans-serif;
+    color: #333;
+}
+li{list-style: none;}
+a{font: 13px releway;}
+#menu{
+    width: 100%;
+    height: 77px;
+}
+#menu .topic {
+    display: flex;
+    justify-content: flex-end;
+}
+#menu  .title span{
+    font: 24px releway;
+    color: #666;
+    line-height: 52px;
+    margin-left: 110px;
+}
+#menu ul{
+    margin-right: 150px;
+    margin-top: 11px;
+}
+#menu ul li {
+    float: left;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+    padding: 0px 10px 0px 10px;
+}
+#menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    height: 55px;
+    line-height: 55px;
+    color: #4C4C4C;
+}
+#menu ul li:hover .sub_menu{
+    display: block;
+}
+#menu ul li .sub_menu{
+    display: none; /*ẩn đi phần từ đầu tiên*/
+    position: absolute;
+    min-width: 250px;
+    border: 1px solid #000000;
+}
+#menu ul li .sub_menu_level{
+    display: none; /*ẩn đi phần từ đầu tiên*/
+    position: absolute;
+
+}
+#menu ul li:hover .sub_menu_level{
+    display: block;
+}
+#menu ul li .sub_menu_shop{
+    display: none; /*ẩn đi phần từ đầu tiên*/
+    position: absolute;
+
+}
+#menu ul li:hover .sub_menu_shop{
+    display: block;
+}
